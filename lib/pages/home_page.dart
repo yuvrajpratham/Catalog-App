@@ -8,7 +8,7 @@ import '../widgets/item_widgets.dart';
 
 class HomePage extends StatefulWidget {
   @override
-  State<HomePage> createState() => _HomePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
@@ -19,11 +19,13 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    loadData();
     
   }
   loadData() async {
    final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
+        print(catalogJson);
     final decodedData = jsonDecode(catalogJson);
 
     var productsData = decodedData["products"];
