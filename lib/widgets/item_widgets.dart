@@ -6,7 +6,7 @@ class ItemWidget extends StatelessWidget {
 
   const ItemWidget({
     Key? key, // Change: Added nullable Key
-    required this.item,
+    required this.item ,
   }) : super(key: key);
 
   @override
