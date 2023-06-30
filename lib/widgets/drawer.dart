@@ -5,7 +5,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final imageUrl =
-        "https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg";
+        "https://png.pngtree.com/png-clipart/20201208/original/pngtree-green-explosion-hi-dialog-png-image_5572200.jpg";
     return Drawer(
       child: Container(
         color: Colors.lightBlue,
@@ -17,7 +17,7 @@ class MyDrawer extends StatelessWidget {
               child: UserAccountsDrawerHeader(
                 margin: EdgeInsets.zero,
                 accountName: Text("Yuvraj Pratham",style: TextStyle(color: Colors.white),),
-                accountEmail: Text("Yuvrajpratham01@gmail.com",style:TextStyle(color: Colors.white),),
+                accountEmail: Text("yuvrajpratham01@gmail.com",style:TextStyle(color: Colors.white),),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(imageUrl),
                 ),
